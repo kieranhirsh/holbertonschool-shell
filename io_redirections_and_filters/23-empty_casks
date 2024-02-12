@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -laR | tr -s " " | cut -d " " -f5,9 | grep ^0 | cut -d " " -f2
+find . -type f -empty | ls -laR | tr -s " " | cut -d " " -f9
